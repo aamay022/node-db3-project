@@ -23,7 +23,7 @@ async function find() { // EXERCISE A
   .orderBy('sc.scheme_id','asc')
   .select('sc.*')
   .count('st.step_id as number_of_steps')
-  console.log(rows)
+  
   return rows
 }
 
@@ -112,7 +112,6 @@ async function findById(scheme_id) { // EXERCISE B
         })
       }
       })
-      console.log(result)
       return result
 }
 
